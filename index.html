@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>E Shop - Bootstrap Ecommerce Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap Ecommerce Template" name="keywords">
+        <meta content="Bootstrap Ecommerce Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <!-- Top Header Start -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!--aqui era col-md-6-->
+                    <div class="col-md-6">
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="user">
+                            <button class="cart" id="cesta-carrito"><i class="fa fa-cart-plus m-1"></i><span class="m-3" id="contador-carrito"> (0) </span></button>   
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        
+        
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+        
+        
+
+        <main id = "mainPrincipal">
+            <div class="product-view">
+                <div class="container">
+                    <div  class="row">
+                        <div class="col-md">
+                            <div id="producto-contenedor" class="row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+              <h3>Carrito</h3>
+             
+              <div id="carrito-contenedor">
+        
+              </div>
+              <button id="btn-cerrar-carrito"><i class="cruz"> CERRAR CARRITO </i></button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+              <!-- <p>Producto</p>
+              <p>Precio</p>
+              <p id=cantidad${producto.id}>Cantidad</p>
+              <button class="btn waves-effect waves-ligth boton-eliminar" value="">X</button> -->
+            </div>
+          </div>
+        
+        <!-- Product List Start -->
+        <!-- <div class="product-view">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-1.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-2.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-3.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-4.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-5.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-6.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-7.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+>
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-8.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item">
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-9.png" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="title"><a href="#">Phasellus Gravida</a></div>
+
+                                        <div class="price">$22 <span>$25</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                    
+
+                </div>
+            </div>
+        </div> -->
+        <!-- Product List End -->
+        
+
+
+        
+
+        
+        
+
+        
+        <!-- JavaScript Libraries -->
+       
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/stock.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/dom.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script> -->
+        <!-- <script src="lib/easing/easing.min.js"></script> -->
+        <!-- <script src="lib/slick/slick.min.js"></script>  -->
+
+        
+        <!-- Template Javascript -->
+        <!-- <script src="js/main.js"></script> -->
+    </body>
+</html>
