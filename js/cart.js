@@ -120,9 +120,12 @@ const eliminarProducto =(productoId) =>{
     /*utilizo la funcion de orden superior FindIndex que me devuelve la posicion del array en donde se encuentra el id que obtengo por parametro*/
     
     const productoIndice = carrito.findIndex(producto => producto.id == productoId)
-
+    /*tuve que agregar productoIndice.cantidad = 12; sino al borrar un producto del carrito, cuando lo agregaba de nuevo se agregaba con las cantidades anteriores*/
+    carrito[productoIndice].cantidad = 1;
+    console.log("cantidad es"+carrito[productoIndice].cantidad)
     /*con splice, que recibe 2 argumentos logro eliminar algo de un array. primero le digo el indice y luego la cantidad a eliminar, en este caso 1*/
     carrito.splice(productoIndice,1)
+    console.log(productoIndice)
     carritoActualizado(carrito)
     actualizarCarrito(carrito)
 }
