@@ -82,8 +82,8 @@ const visualizarCarrito = (cantidad, monto) =>
 {
     const contadorCarrito = document.getElementById("contador-carrito");
     const precio = document.getElementById("precioTotal")
-  
-    contadorCarrito.innerText=cantidad;
+    /*le puse carrito.length para que sea igual al largo del carrito, porque si le ponia "cantidad" era la cantidad total de articulos incluyendo los repetidos*/
+    contadorCarrito.innerText=carrito.length;
     precio.innerText=monto;
 }
 
@@ -150,7 +150,6 @@ const obtenerStorageCarrito = () =>{
 
     /*return carritoStorage para despues CARGARLO cuando se actualice la pagina*/
 }
-0
 
 /*Funcion para cargar el carrito del storage*/
 
@@ -171,5 +170,4 @@ const cargarCarrito = () => {
     }
 
 }
-
 
