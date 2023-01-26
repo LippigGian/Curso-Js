@@ -26,8 +26,7 @@ const chequearProducto =(productoId) => {
        
         // carrito.push(producto2);
         carrito.push(producto)
-        console.log(producto)
-        console.log(carrito)
+
         pintarProductosCarrito(producto)
         actualizarCarrito(carrito)
     }
@@ -36,7 +35,7 @@ const chequearProducto =(productoId) => {
         /*le sumo en 1 unidad la propiedad cantidad del producto repetido del carrito.
         despues lo tengo q mostrar en el dom, asi que lo obtengo del document.getelementByid etc*/
         productoRepetido.cantidad++
-        console.log(productoRepetido.cantidad)
+       
         /*obtengo el producto que se repite con template literals usando backtips, obtengo su elemento cantidad a partir del id*/
         const cantidadProducto = document.getElementById(`cantidad${productoRepetido.id}`)
         /*modifico el nodo texto con innertext*/
@@ -60,6 +59,7 @@ const pintarProductosCarrito = (producto) =>
         <p>Precio: ${producto.precio}</p>
         <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
         <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
+        
     `
     contenedor.appendChild(div)
 }
@@ -107,6 +107,7 @@ const carritoActualizado = (carrito) => {
         <p>Precio: ${producto.precio}</p>
         <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
         <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
+     
     `
     contenedor.appendChild(div)
 });
@@ -122,10 +123,10 @@ const eliminarProducto =(productoId) =>{
     const productoIndice = carrito.findIndex(producto => producto.id == productoId)
     /*tuve que agregar productoIndice.cantidad = 12; sino al borrar un producto del carrito, cuando lo agregaba de nuevo se agregaba con las cantidades anteriores*/
     carrito[productoIndice].cantidad = 1;
-    console.log("cantidad es"+carrito[productoIndice].cantidad)
+    // console.log("cantidad es"+carrito[productoIndice].cantidad)
     /*con splice, que recibe 2 argumentos logro eliminar algo de un array. primero le digo el indice y luego la cantidad a eliminar, en este caso 1*/
     carrito.splice(productoIndice,1)
-    console.log(productoIndice)
+    // console.log(productoIndice)
     carritoActualizado(carrito)
     actualizarCarrito(carrito)
 }

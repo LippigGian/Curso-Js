@@ -5,7 +5,7 @@ const stock =
         nombre: "Musculosa",
         tipo: "remera",
         desc: "Musculosa Negra Wemul Summer",
-        precio: 1200,
+        precio: 12500,
         talle: "L",
         imagen: 'img/product-1.png ',
         cantidad:1
@@ -16,7 +16,7 @@ const stock =
         nombre: "Vestido",
         tipo: "vestido",
         desc: "Vestido Negro Vindaloo Emma",
-        precio: 500,
+        precio: 8950,
         talle: "L",
         imagen: 'img/product-2.png',
         cantidad:1
@@ -27,7 +27,7 @@ const stock =
         nombre: "Smoking",
         tipo: "smoking",
         desc: "Smoking Negro Equus Slim Tulum",
-        precio: 900,
+        precio: 65000,
         talle: "S",
         imagen: 'img/product-3.png',
         cantidad:1
@@ -38,7 +38,7 @@ const stock =
         nombre: "Sweater",
         tipo: "sweater",
         desc: "Sweater Negro Harvey  Oversize",
-        precio: 1600,
+        precio: 4500,
         talle: "L",
         imagen: 'img/product-4.png',
         cantidad:1
@@ -49,7 +49,7 @@ const stock =
         nombre: "Tapado",
         tipo: "tapado",
         desc: "Campera Larga Negra Vespertine ",
-        precio: 1200,
+        precio: 36000,
         talle: "L",
         imagen: 'img/product-5.png',
         cantidad:1
@@ -60,7 +60,7 @@ const stock =
         nombre: "Vestido",
         tipo: "vestido",
         desc: "Vestido Negro Nano Gianna I",
-        precio: 500,
+        precio: 5050,
         talle: "L",
         imagen: 'img/product-6.png',
         cantidad:1
