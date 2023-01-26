@@ -7,7 +7,7 @@ const stock =
         desc: "Musculosa Negra Wemul Summer",
         precio: 1200,
         talle: "L",
-        imagen: '../img/product-1.png ',
+        imagen: 'img/product-1.png ',
         cantidad:1
     },
 
@@ -18,7 +18,7 @@ const stock =
         desc: "Vestido Negro Vindaloo Emma",
         precio: 500,
         talle: "L",
-        imagen: '../img/product-2.png',
+        imagen: 'img/product-2.png',
         cantidad:1
     },
 
@@ -29,7 +29,7 @@ const stock =
         desc: "Smoking Negro Equus Slim Tulum",
         precio: 900,
         talle: "S",
-        imagen: '../img/product-3.png',
+        imagen: 'img/product-3.png',
         cantidad:1
     },
 
@@ -40,7 +40,7 @@ const stock =
         desc: "Sweater Negro Harvey  Oversize",
         precio: 1600,
         talle: "L",
-        imagen: '../img/product-4.png',
+        imagen: 'img/product-4.png',
         cantidad:1
     },
 
@@ -51,7 +51,7 @@ const stock =
         desc: "Campera Larga Negra Vespertine ",
         precio: 1200,
         talle: "L",
-        imagen: '../img/product-5.png',
+        imagen: 'img/product-5.png',
         cantidad:1
     },
 
@@ -62,7 +62,7 @@ const stock =
         desc: "Vestido Negro Nano Gianna I",
         precio: 500,
         talle: "L",
-        imagen: '../img/product-6.png',
+        imagen: 'img/product-6.png',
         cantidad:1
     }
 ];
